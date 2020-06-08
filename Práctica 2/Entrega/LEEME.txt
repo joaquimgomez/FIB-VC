@@ -1,0 +1,5 @@
+EN EL DIRECTORIO /code/ SE ENCUENTRA EL CÓDIGO DE LA PRÁCTICA:
+	- Practica2.mlx - Contiene el entrenamiento y validación, así como todas las funciones empleadas.
+	- predictDigit.m - Implementa el sistema de reconocimiento. Para utilizarlo hay que pasarle el modelo
+										 y la imagen sobre la que realizar la predicción.
+	- quadraticSVM.mat - Modelo final para la detección de dígitos.
