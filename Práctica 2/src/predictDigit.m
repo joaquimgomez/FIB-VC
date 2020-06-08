@@ -1,4 +1,4 @@
-function digit = predictDigit(img, model)
+function digit = predictDigit(img)
     % ---------- FUNCTIONS AREA ----------
     
     function features = featuresVector(img)
@@ -121,12 +121,13 @@ function digit = predictDigit(img, model)
     
     
     % ---------- MAIN PROGRAM ----------
+    l = load("quadraticSVM.mat");
     
     % Compute features vector
     fv = featuresVector(img);
     
     % Prediction
-    digit = model.predictFcn(array2table(fv));
+    digit = l.quadraticSVM.predictFcn(array2table(fv));
     
     % ---------- END MAIN PROGRAM ----------
 end
